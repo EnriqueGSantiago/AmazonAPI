@@ -81,6 +81,7 @@ Se debe de enviar un json con la siguiente estructura:
 }
 ```
 Nota: El id del producto se genera automáticamente
+
 ---
 
 
@@ -97,7 +98,8 @@ Se requiere un json con la siguiente estructura:
     "keyword": "computadora1"
 }
 ```
-Nota: El keyword puede ser nombre o precio o categoría
+Nota: El keyword puede ser nombre, precio o categoría
+
 ---
 
 
