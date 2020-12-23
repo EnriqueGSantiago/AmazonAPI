@@ -37,6 +37,7 @@ Y se envía un json:
         "stock": 300
 }
 ```
+---
 
 
 _Tabla con los datos del almacén_
@@ -45,6 +46,7 @@ Si se requiere consultar el catálogo de los productos ('products.json') se util
 ```
 '/readProducts'
 ```
+---
 
 
 _Descontar los elementos del almacén que ya fueron vendidos_
@@ -60,6 +62,7 @@ Y se envía un json con los datos id y cantidad para poder actualizar el stock d
     "quantity": 1
 }
 ```
+---
 
 
 _Agregar un nuevo producto al almacén_
@@ -78,6 +81,7 @@ Se debe de enviar un json con la siguiente estructura:
 }
 ```
 Nota: El id del producto se genera automáticamente
+---
 
 
 
@@ -94,7 +98,7 @@ Se requiere un json con la siguiente estructura:
 }
 ```
 Nota: El keyword puede ser nombre o precio o categoría
-
+---
 
 
 
