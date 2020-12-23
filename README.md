@@ -22,6 +22,7 @@ c) Se podra hacer el proyecto de la siguientes formas:
 ## LAS PETICIONES
 
 _Carrito de compra_
+
 Para poder agregar datos al archivo carrito de compra ('shoppingCart.json') se utiliza (POST):
 ```
 '/addProductcart'
