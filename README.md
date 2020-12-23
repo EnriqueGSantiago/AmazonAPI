@@ -38,13 +38,17 @@ Y se envía un json:
 }
 ```
 
+
 _Tabla con los datos del almacén_
+
 Si se requiere consultar el catálogo de los productos ('products.json') se utiliza (GET):
 ```
 '/readProducts'
 ```
 
+
 _Descontar los elementos del almacén que ya fueron vendidos_
+
 Para restar los elementos ya vendidos se utiliza (PUT):
 ```
 '/manageStock'
@@ -58,22 +62,46 @@ Y se envía un json con los datos id y cantidad para poder actualizar el stock d
 ```
 
 
+_Agregar un nuevo producto al almacén_
+
+Para agregar un porducto al almacén se ocupa (POST):
+```
+'/addProduct'
+```
+Se debe de enviar un json con la siguiente estructura:
+```
+{
+        "productName": "computadora2",
+        "price": 3457,
+        "category": "computers",
+        "stock": 300
+}
+```
+Nota: El id del producto se genera automáticamente
+
+
+
+_Busqueda de prducto en base a nombre, costo y categoría_
+
+El filtrado por keyword se realiza en (GET):
+```
+'/filterProduct'
+```
+Se requiere un json con la siguiente estructura:
+```
+{
+    "keyword": "computadora1"
+}
+```
+Nota: El keyword puede ser nombre o precio o categoría
+
+
+
+
 
 ## Ejecutando las pruebas ⚙️
 
 
-
-
-
-
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
 
 
